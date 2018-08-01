@@ -1,4 +1,4 @@
-FROM rocker/rstudio
+FROM rocker/tidyverse
 
 RUN apt-get update && apt-get install -y \
     libssl-dev \

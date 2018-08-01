@@ -4,7 +4,7 @@
 # Install required R-Packages for the benchmark (add yours here)
 # install.packages("devtools")
 # install latest mlr version
-library("devtools")
+install.packages("devtools")
 
 # Required for benchmark
 install.packages("farff")
