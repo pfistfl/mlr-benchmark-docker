@@ -1,4 +1,4 @@
-FROM rocker/tidyverse
+FROM rocker/rstudio
 
 RUN apt-get update && apt-get install -y \
     libssl-dev \
@@ -7,6 +7,6 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/ \
     && rm -rf /tmp/downloaded_packages/ /tmp/*.rds
 
-COPY ./R ~/
+COPY ./R /home/rstudio/R
 
-# RUN Rscript ~/R/install_packages.R
+RUN Rscript /home/rstudio/R/install_packages.R
