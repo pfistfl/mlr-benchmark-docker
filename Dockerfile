@@ -9,4 +9,4 @@ RUN apt-get update && apt-get install -y \
 
 COPY ./R ~/
 
-RUN Rscript ~/R/install_packages.R
+# RUN Rscript ~/R/install_packages.R
